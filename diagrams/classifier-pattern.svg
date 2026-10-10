@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 60 1040 440" role="img" aria-labelledby="t d" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="t">The classifier pattern</title>
+  <desc id="d">Rules, context and incoming input both feed the classifier. The classifier returns a typed output holding one label, a summary and extracted fields. Urgent labels send an alert, and every input is saved to the log.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1B3A2D"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="580" fill="#FFFFFF"/>
+
+
+  <g fill="#FFFFFF" stroke="#1B3A2D" stroke-width="1.5">
+    <rect x="30" y="80" width="300" height="190" rx="8"/>
+    <rect x="370" y="80" width="300" height="190" rx="8"/>
+    <rect x="710" y="80" width="300" height="190" rx="8"/>
+    <rect x="370" y="350" width="300" height="130" rx="8"/>
+    <rect x="30" y="375" width="300" height="80" rx="8"/>
+    <rect x="710" y="375" width="300" height="80" rx="8"/>
+  </g>
+  <g stroke="#1B3A2D" stroke-width="1.5">
+    <path d="M30 122 H330"/>
+    <path d="M370 122 H670"/>
+    <path d="M710 122 H1010"/>
+    <path d="M370 392 H670"/>
+  </g>
+
+  <g fill="none" stroke="#1B3A2D" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M180 270 V310 H470 V272"/>
+    <path d="M860 270 V310 H570 V272"/>
+    <path d="M520 270 V348"/>
+    <path d="M370 415 H332"/>
+    <path d="M670 415 H708"/>
+  </g>
+
+  <g fill="#1B3A2D">
+    <g font-size="15" font-weight="700" letter-spacing="1">
+      <text x="48" y="107">1. RULES AND CONTEXT</text>
+      <text x="388" y="107">2. CLASSIFIER</text>
+      <text x="728" y="107">3. INPUT</text>
+      <text x="388" y="377">4. TYPED OUTPUT</text>
+      <text x="48" y="409">5. ALERT</text>
+      <text x="728" y="409">5. LOG</text>
+    </g>
+    <g font-size="14">
+      <text x="48" y="152">• Written criteria for each label</text>
+      <text x="48" y="180">• Task-specific data and rules</text>
+      <text x="48" y="208">• Keywords and cues</text>
+      <text x="48" y="236">• Reference text files or other context</text>
+
+      <text x="388" y="152">• Reads the input against the rules</text>
+      <text x="388" y="180">• Picks one label from a fixed set</text>
+      <text x="388" y="208">• Writes the summary</text>
+      <text x="388" y="236">• Extracts fields</text>
+
+      <text x="728" y="152">• Voice</text>
+      <text x="728" y="180">• Image (not tested)</text>
+      <text x="728" y="208">• Text</text>
+
+      <text x="388" y="418">• One label</text>
+      <text x="388" y="442">• A summary</text>
+      <text x="388" y="466">• Extracted fields</text>
+
+      <text x="48" y="435">Urgent labels only</text>
+      <text x="728" y="435">Every input</text>
+    </g>
+    <g font-size="13" font-style="italic" text-anchor="middle">
+      <text x="325" y="302">Rules and context</text>
+      <text x="715" y="302">Incoming input</text>
+    </g>
+  </g>
+</svg>
